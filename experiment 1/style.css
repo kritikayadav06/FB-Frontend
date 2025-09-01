@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    display: flex;
+    min-height: 100vh; /* full height */
+}
+
+/* Center content in left section */
+.left {
+    flex: 1;
+    background-color: #251351;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;     /* stack items vertically */
+    align-items: center;        /* center horizontally */
+    justify-content: center;    /* center vertically */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Profile image */
+.profile {
+    height: 250px;
+    width: 250px;
+    border-radius: 30%;
+    border: 3px solid white;
+    object-fit: cover;
+    margin: 20px 0;
+}
+
+/* Social links */
+.connect {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;                 /* space between icons */
+    justify-content: center;
+}
+
+.connect a {
+    font-size: 28px;
+    color: #F9DC5C;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.connect a:hover {
+    color: white;              /* hover effect */
+}
+
+/* Right section */
+.right {
+    flex: 2;
+    background-color: white;
+    padding: 40px;
+}
